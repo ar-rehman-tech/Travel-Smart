@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Smart - Premium Travel Experiences</title>
+    <meta name="description" content="Discover the world with Travel Smart. Curated travel guides, popular destinations, and expert recommendations.">
+    
+    <!-- Preconnect for Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Unified High-Performance Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Deferred Lightweight JavaScript -->
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo" id="main-logo">
+                <i class="fas fa-globe-americas" aria-hidden="true"></i>
+                <span>Travel Smart</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="destination.html">Destinations</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div id="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="floating-elements">
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+                <div class="floating-element"></div>
+            </div>
+            <div class="hero-content">
+                <h1 class="hero-anim-title">Discover the World with Travel Smart</h1>
+                <p class="hero-anim-text">Find the perfect destination for your next adventure with our curated travel guides and expert recommendations.</p>
+                <div class="search-box hero-anim-search">
+                    <input type="text" placeholder="Search destinations..." aria-label="Search destinations">
+                    <button type="button"><i class="fas fa-search"></i> Search</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Destinations Section -->
+        <section id="destinations">
+            <div class="section-title">
+                <h2>Popular Destinations</h2>
+                <p>Explore our handpicked selection of breathtaking destinations around the world.</p>
+            </div>
+            <div class="destination-grid">
+                <!-- Bali -->
+                <div class="destination-card" data-destination="bali">
+                    <div class="card-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM3-_9dEXDBwQSNGP38rnAqXT3hX0QWMhFhQ&s" alt="Bali, Indonesia" loading="lazy" decoding="async">
+                    </div>
+                    <div class="card-content">
+                        <h3>Bali, Indonesia</h3>
+                        <p>Experience the perfect blend of culture, beaches, and nightlife in the Island of Gods.</p>
+                        <div class="card-meta">
+                            <div class="price">$899</div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-hover-content">
+                        <p>7 days all inclusive package with flights and premium resorts</p>
+                        <button class="explore-button" data-destination="bali">Explore More <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Santorini -->
+                <div class="destination-card" data-destination="santorini">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=600&q=80" alt="Santorini, Greece" loading="lazy" decoding="async">
+                    </div>
+                    <div class="card-content">
+                        <h3>Santorini, Greece</h3>
+                        <p>Whitewashed buildings, blue domes, and stunning sunsets await in this Mediterranean paradise.</p>
+                        <div class="card-meta">
+                            <div class="price">$1,199</div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-hover-content">
+                        <p>5 days luxury package with private villa and yacht tour</p>
+                        <button class="explore-button" data-destination="santorini">Explore More <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Kyoto -->
+                <div class="destination-card" data-destination="kyoto">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1513326738677-b964603b136d?auto=format&fit=crop&w=600&q=80" alt="Kyoto, Japan" loading="lazy" decoding="async">
+                    </div>
+                    <div class="card-content">
+                        <h3>Kyoto, Japan</h3>
+                        <p>Immerse yourself in traditional Japanese culture with ancient temples and beautiful gardens.</p>
+                        <div class="card-meta">
+                            <div class="price">$1,499</div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-hover-content">
+                        <p>10 days cultural experience with traditional ryokan stay</p>
+                        <button class="explore-button" data-destination="kyoto">Explore More <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="destination.html" class="booking-button" style="text-decoration: none;">View All Destinations <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </section>
+
+        <!-- Highlights & Preview Section -->
+        <section class="home-highlights">
+            <div class="section-title">
+                <h2>Experience the Smart Way to Travel</h2>
+                <p>Curated guides, exceptional savings, and authentic reviews from travelers worldwide.</p>
+            </div>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3>Smart Features</h3>
+                    <p>Discover detailed city guides, exclusive holiday deals, 24/7 concierge support, and offline mobile access.</p>
+                    <a href="features.html" class="card-link" style="color: var(--primary); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; margin-top: 1.2rem;">Explore Features <i class="fas fa-arrow-right" style="margin-left: 0.5rem;"></i></a>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Traveler Stories</h3>
+                    <p>Read authentic feedback and verified ratings from our global community of over 50,000 travelers.</p>
+                    <a href="testimonials.html" class="card-link" style="color: var(--primary); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; margin-top: 1.2rem;">Read Testimonials <i class="fas fa-arrow-right" style="margin-left: 0.5rem;"></i></a>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-compass"></i>
+                    </div>
+                    <h3>Handcrafted Tours</h3>
+                    <p>Tailor-made itineraries and personalized packages curated by local travel experts for 100+ destinations.</p>
+                    <a href="destination.html" class="card-link" style="color: var(--primary); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; margin-top: 1.2rem;">View Destinations <i class="fas fa-arrow-right" style="margin-left: 0.5rem;"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <div class="newsletter-wrapper">
+            <section class="newsletter-section">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Stay updated with the latest travel trends, exclusive deals, and destination guides.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Travel Smart newsletter!'); this.reset();">
+                    <input type="email" placeholder="Your email address" required aria-label="Email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Travel Smart</h3>
+                    <p>Your trusted companion for discovering the world's most amazing destinations.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook" onclick="event.preventDefault();"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter" onclick="event.preventDefault();"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram" onclick="event.preventDefault();"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Pinterest" onclick="event.preventDefault();"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="destination.html">Destinations</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Travel Street, Wanderlust City</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@travelsmart.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for travel tips and exclusive offers.</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Travel Smart newsletter!'); this.reset();">
+                        <input type="email" placeholder="Your email address" aria-label="Email address" required>
+                        <button type="submit" aria-label="Subscribe"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Travel Smart. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Destination Detail Modal -->
+    <div id="destination-detail" role="dialog" aria-modal="true">
+        <div class="detail-header">
+            <img id="detail-image" src="" alt="Destination Image">
+            <div class="detail-overlay"></div>
+            <div class="detail-nav">
+                <button class="back-button" id="back-button"><i class="fas fa-arrow-left"></i> Back to Destinations</button>
+            </div>
+            <div class="detail-title">
+                <h1 id="detail-name"></h1>
+                <div class="card-meta">
+                    <div class="price" id="detail-price"></div>
+                    <div class="rating" id="detail-rating"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="detail-content">
+            <div class="detail-info">
+                <div class="detail-description">
+                    <h2>About this Destination</h2>
+                    <p id="detail-description"></p>
+                    <p>Whether you're seeking adventure, relaxation, or cultural immersion, this destination offers something for every type of traveler. From stunning natural landscapes to rich historical sites, you'll create memories that will last a lifetime.</p>
+                </div>
+                <div class="detail-highlights">
+                    <h3>Trip Highlights</h3>
+                    <ul class="highlight-list" id="detail-highlights"></ul>
+                </div>
+            </div>
+
+            <div class="detail-grid">
+                <div class="detail-card">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h4>Comprehensive Guides</h4>
+                    <p>Detailed information about all attractions and hidden gems</p>
+                </div>
+                <div class="detail-card">
+                    <i class="fas fa-concierge-bell"></i>
+                    <h4>Luxury Accommodations</h4>
+                    <p>Stay at the finest hotels and resorts for a comfortable journey</p>
+                </div>
+                <div class="detail-card">
+                    <i class="fas fa-users"></i>
+                    <h4>Expert Local Guides</h4>
+                    <p>Knowledgeable guides to enhance your experience</p>
+                </div>
+            </div>
+
+            <div class="booking-section">
+                <h2>Ready to Experience This Adventure?</h2>
+                <p>Book now and secure your spot for an unforgettable journey</p>
+                <button class="booking-button" onclick="alert('Booking feature opening soon! Contact us directly to reserve your trip.')">Book Now <i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</body>
+
+</html>
